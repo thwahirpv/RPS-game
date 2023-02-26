@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+     <div id="gameCav">
+     
+    <div class="container" >
+        <div class="score-screen-section">
+
+            <div class="player">
+                <h1>You</h1>
+                <h2 class="score-screen" id="playerScoreScreeen">0</h2>
+            </div>
+
+            <div class="robot">
+                <h1>Robot</h1>
+                <h2 class="score-screen" id="computerScoreScreen">0</h2>
+            </div>
+
+        </div>
+
+        <div class="game-play-btn">
+            <button class="rpsBtn" value="Rock">🪨</button>
+            <button class="rpsBtn" value="Paper">🧻</button>
+            <button class="rpsBtn" value="Scissor">✂️</button>
+        </div>
+    
+
+        <div class="result-div">
+            <div id="result"></div>
+            <div id="player"></div>
+            <div id="verses"></div>
+            <div id="audio">
+                <audio src="audio/mixkit-male-voice-cheer-victory-2011.wav"
+                id="winSound">
+                </audio>
+                <audio src="audio/UCYVGQK-fail-safe-beep.mp3"
+                id="failSound">
+                </audio>
+            </div>
+        </div>
+
+        <img src="images/icons8-restart-64.png" class="clear-btn" alt="">
+    
+
+        <div id="gameOver" class="game-over">
+            <audio src="audio/WPHQZAQ-failed.mp3" id="finFailSound"></audio>
+            <audio src="audio/mixkit-animated-small-group-applause-523.wav" id="finWinSound"></audio>
+            <h1 class="over-heading">GAME OVER</h1>
+            <div class="final-score-screen">
+            <h1 id="whoWin">you win</h1>
+            <h1 class="star-section"><span id="starOne"></span> <span id="starTwo"></span> 
+                <span id="starThree"></span></h1>
+            </div>
+                
+            <a href="" onclick="playAgain()">PLAY AGAIN</a>
+        </div>
+    </div>
+</div> 
+
+    <div id="gameStart" class="game-start">
+        <h1>START GAME</h1>
+        <img onclick="startGame()" src="images/—Pngtree—blue play button icon_4419205.png" alt="">
+    </div> 
+
+    
+    
+    <script src="style.js"></script>
+</body>
+</html>
